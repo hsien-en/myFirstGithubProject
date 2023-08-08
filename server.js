@@ -1,6 +1,5 @@
 import express from 'express'
-
-const PORT = process.env.port || 3009;
-const app = express();
-const server = app.listen(PORT,() => console.log(`Yay and t=stuuf jk dotn talk to me`,PORT));
-app.use(express.static('public'));
+const app = express(),
+port = 3004,
+server = app.listen(port,()=>console.log("yay our server is runnig at 127.0.0.1:", port))
+app.use(express.static('public'))
