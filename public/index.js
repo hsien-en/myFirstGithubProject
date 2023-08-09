@@ -18,4 +18,15 @@ i = ((i +1) % colors.length)
 const colorChangingDiv = document.getElementById('colorChanging')
 colorChangingDiv.addEventListener('click', ()=>{changeColorPlease()})
 
+const bigWordsDiv = document.getElementById('moreWords')
+function changeWordsSize(){
+    colorChangingDiv.textContent+="Good Job!!!"
 
+}
+bigWordsDiv.addEventListener('click',()=>{changeWordsSize()})
+
+function textAdd(Message){
+let newDiv =document.createElement("p")
+    newDiv.textContent=Message
+    document.body.appendChild(newDiv)
+}
