@@ -11,10 +11,14 @@
 <body id="bodyID" class="bg-primary">
    <h1 id="moreWords" class="jumbotron">HEY THIS IS COOL</h1> 
    <div id="colorChanging">Hi this is me I hope you have a good day. </div>
-   <input type="button" value="Press Me Now" class="btn btn-danger">
+   <input type="button" value="Press Me Now" class="btn btn-danger" onclick="disappear(this)">
+<!--
+    1. display style property to none 
+    2. onclick
+-->
    <label for="cooldiv">Enter Text To Seal Your Fate</label>
-   <input title="coolestdiv ever"type="text" onchange="textAdd(value)">
-   
+   <input title="coolestdiv ever"type="text" onchange="textAdd(value); disappear(this)">
+
 
 <script src="index.js"></script>
 </body>

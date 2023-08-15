@@ -30,3 +30,6 @@ let newDiv =document.createElement("p")
     newDiv.textContent=Message
     document.body.appendChild(newDiv)
 }
+function disappear(div){
+div.style.display="none"
+}
